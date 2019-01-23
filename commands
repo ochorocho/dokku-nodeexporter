@@ -5,7 +5,7 @@ source "$PLUGIN_CORE_AVAILABLE_PATH/common/functions"
 
 DOKKU_NODEEXPORTER_IMAGE="prom/node-exporter:v0.15.2"
 DOKKU_NODEEXPORTER_CONTAINER=nodeexporter
-DOKKU_NODEEXPORTER_DEFAULT_PORT=9110
+DOKKU_NODEEXPORTER_DEFAULT_PORT=9111
 DOKKU_NODEEXPORTER_PORT="${DOKKU_NODEEXPORTER_PORT:-$DOKKU_NODEEXPORTER_DEFAULT_PORT}"
 DOKKU_NODEEXPORTER_ARGS="--path.procfs=/host/proc --path.sysfs=/host/sys --collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc)($|/)"
 
