@@ -10,7 +10,7 @@ Note that the container needs to run in privilege modes. Host volumes are mounte
 
 On the Dokku server run the following:
 ```
-sudo dokku plugin:install https://github.com/mtarnovan/dokku-nodeexporter nodeexporter
+sudo dokku plugin:install https://github.com/ochorocho/dokku-nodeexporter nodeexporter
 ```
 
 ## Usage
