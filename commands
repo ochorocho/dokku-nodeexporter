@@ -27,7 +27,7 @@ f_dokku_nodeexporter_start() {
         --volume=/proc:/host/proc:ro \
         --volume=/sys:/host/sys:ro \
         --volume=/:/rootfs:ro \
-        --publish="$DOKKU_NODEEXPORTER_PORT:9100" \
+        --publish="127.0.0.1:$DOKKU_NODEEXPORTER_PORT:9100" \
         --detach=true \
         --expose=$DOKKU_NODEEXPORTER_PORT \
         --name="$DOKKU_NODEEXPORTER_CONTAINER" \
